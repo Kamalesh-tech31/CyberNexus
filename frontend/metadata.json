@@ -1,0 +1,6 @@
+{
+  "name": "CyberNexus",
+  "description": "ML-powered digital content analysis platform detecting phishing, malware, and threats across Email, SMS, URL, and QR codes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

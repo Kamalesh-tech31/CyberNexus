@@ -1,0 +1,1357 @@
+{
+    "phase": "Phase 4 - Two-Model Training & Controlled Comparison",
+    "environment": {
+        "python_executable": "C:\\Users\\Digit\\Desktop\\CyberNexus\\.venv\\Scripts\\python.exe",
+        "python_version": "3.14.0 (tags/v3.14.0:ebf955d, Oct  7 2025, 10:15:03) [MSC v.1944 64 bit (AMD64)]",
+        "scikit_learn_version": "sklearn.linear_model._logistic",
+        "lightgbm_version": "4.7.0"
+    },
+    "channels": {
+        "sms": {
+            "channel": "SMS",
+            "logistic_regression": {
+                "best_config": {
+                    "C": 5.0,
+                    "class_weight": "balanced",
+                    "solver": "lbfgs",
+                    "max_iter": 1000,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "C": 0.1,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9689922480620154,
+                            "precision": 0.9294117647058824,
+                            "recall": 0.8144329896907216,
+                            "f1": 0.8681318681318682,
+                            "roc_auc": 0.9787418721162192,
+                            "confusion_matrix": {
+                                "tn": 671,
+                                "fp": 6,
+                                "fn": 18,
+                                "tp": 79,
+                                "matrix": [
+                                    [
+                                        671,
+                                        6
+                                    ],
+                                    [
+                                        18,
+                                        79
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.01604914665222168
+                    },
+                    {
+                        "config": {
+                            "C": 1.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9741602067183462,
+                            "precision": 0.9529411764705882,
+                            "recall": 0.8350515463917526,
+                            "f1": 0.8901098901098901,
+                            "roc_auc": 0.9872694878862172,
+                            "confusion_matrix": {
+                                "tn": 673,
+                                "fp": 4,
+                                "fn": 16,
+                                "tp": 81,
+                                "matrix": [
+                                    [
+                                        673,
+                                        4
+                                    ],
+                                    [
+                                        16,
+                                        81
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.021823644638061523
+                    },
+                    {
+                        "config": {
+                            "C": 5.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9819121447028424,
+                            "precision": 0.9770114942528736,
+                            "recall": 0.8762886597938144,
+                            "f1": 0.9239130434782609,
+                            "roc_auc": 0.991502840000609,
+                            "confusion_matrix": {
+                                "tn": 675,
+                                "fp": 2,
+                                "fn": 12,
+                                "tp": 85,
+                                "matrix": [
+                                    [
+                                        675,
+                                        2
+                                    ],
+                                    [
+                                        12,
+                                        85
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.04271340370178223
+                    },
+                    {
+                        "config": {
+                            "C": 10.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9844961240310077,
+                            "precision": 0.9775280898876404,
+                            "recall": 0.8969072164948454,
+                            "f1": 0.9354838709677419,
+                            "roc_auc": 0.9930865400721802,
+                            "confusion_matrix": {
+                                "tn": 675,
+                                "fp": 2,
+                                "fn": 10,
+                                "tp": 87,
+                                "matrix": [
+                                    [
+                                        675,
+                                        2
+                                    ],
+                                    [
+                                        10,
+                                        87
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.05813241004943848
+                    },
+                    {
+                        "config": {
+                            "C": 1.0,
+                            "class_weight": "balanced",
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9728682170542635,
+                            "precision": 0.8725490196078431,
+                            "recall": 0.9175257731958762,
+                            "f1": 0.8944723618090452,
+                            "roc_auc": 0.9859598897501104,
+                            "confusion_matrix": {
+                                "tn": 664,
+                                "fp": 13,
+                                "fn": 8,
+                                "tp": 89,
+                                "matrix": [
+                                    [
+                                        664,
+                                        13
+                                    ],
+                                    [
+                                        8,
+                                        89
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.03694581985473633
+                    },
+                    {
+                        "config": {
+                            "C": 5.0,
+                            "class_weight": "balanced",
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9844961240310077,
+                            "precision": 0.9381443298969072,
+                            "recall": 0.9381443298969072,
+                            "f1": 0.9381443298969072,
+                            "roc_auc": 0.9890968341226454,
+                            "confusion_matrix": {
+                                "tn": 671,
+                                "fp": 6,
+                                "fn": 6,
+                                "tp": 91,
+                                "matrix": [
+                                    [
+                                        671,
+                                        6
+                                    ],
+                                    [
+                                        6,
+                                        91
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.05392122268676758
+                    }
+                ],
+                "train_time_sec": 0.0600132942199707,
+                "val_inf_time_sec": 0.000690460205078125,
+                "test_inf_time_sec": 0.0006787776947021484,
+                "model_size_kb": 32.0927734375,
+                "val_metrics": {
+                    "accuracy": 0.9844961240310077,
+                    "precision": 0.9381443298969072,
+                    "recall": 0.9381443298969072,
+                    "f1": 0.9381443298969072,
+                    "roc_auc": 0.9890968341226454,
+                    "confusion_matrix": {
+                        "tn": 671,
+                        "fp": 6,
+                        "fn": 6,
+                        "tp": 91,
+                        "matrix": [
+                            [
+                                671,
+                                6
+                            ],
+                            [
+                                6,
+                                91
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.9883720930232558,
+                    "precision": 0.9578947368421052,
+                    "recall": 0.9479166666666666,
+                    "f1": 0.9528795811518325,
+                    "roc_auc": 0.999492994100295,
+                    "confusion_matrix": {
+                        "tn": 674,
+                        "fp": 4,
+                        "fn": 5,
+                        "tp": 91,
+                        "matrix": [
+                            [
+                                674,
+                                4
+                            ],
+                            [
+                                5,
+                                91
+                            ]
+                        ]
+                    }
+                }
+            },
+            "lightgbm": {
+                "best_config": {
+                    "n_estimators": 200,
+                    "learning_rate": 0.05,
+                    "num_leaves": 31,
+                    "class_weight": null,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "n_estimators": 100,
+                            "learning_rate": 0.1,
+                            "num_leaves": 31,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9844961240310077,
+                            "precision": 0.9381443298969072,
+                            "recall": 0.9381443298969072,
+                            "f1": 0.9381443298969072,
+                            "roc_auc": 0.9901323303232881,
+                            "confusion_matrix": {
+                                "tn": 671,
+                                "fp": 6,
+                                "fn": 6,
+                                "tp": 91,
+                                "matrix": [
+                                    [
+                                        671,
+                                        6
+                                    ],
+                                    [
+                                        6,
+                                        91
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.30063462257385254
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.05,
+                            "num_leaves": 31,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9857881136950905,
+                            "precision": 0.9479166666666666,
+                            "recall": 0.9381443298969072,
+                            "f1": 0.9430051813471503,
+                            "roc_auc": 0.9925687919718589,
+                            "confusion_matrix": {
+                                "tn": 672,
+                                "fp": 5,
+                                "fn": 6,
+                                "tp": 91,
+                                "matrix": [
+                                    [
+                                        672,
+                                        5
+                                    ],
+                                    [
+                                        6,
+                                        91
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.5826375484466553
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 150,
+                            "learning_rate": 0.1,
+                            "num_leaves": 15,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9832041343669251,
+                            "precision": 0.9285714285714286,
+                            "recall": 0.9381443298969072,
+                            "f1": 0.9333333333333333,
+                            "roc_auc": 0.9885638581370204,
+                            "confusion_matrix": {
+                                "tn": 670,
+                                "fp": 7,
+                                "fn": 6,
+                                "tp": 91,
+                                "matrix": [
+                                    [
+                                        670,
+                                        7
+                                    ],
+                                    [
+                                        6,
+                                        91
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.28437137603759766
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 100,
+                            "learning_rate": 0.1,
+                            "num_leaves": 31,
+                            "class_weight": "balanced",
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9832041343669251,
+                            "precision": 0.9285714285714286,
+                            "recall": 0.9381443298969072,
+                            "f1": 0.9333333333333333,
+                            "roc_auc": 0.9850766724025035,
+                            "confusion_matrix": {
+                                "tn": 670,
+                                "fp": 7,
+                                "fn": 6,
+                                "tp": 91,
+                                "matrix": [
+                                    [
+                                        670,
+                                        7
+                                    ],
+                                    [
+                                        6,
+                                        91
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.36658430099487305
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.05,
+                            "num_leaves": 31,
+                            "class_weight": "balanced",
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9844961240310077,
+                            "precision": 0.9292929292929293,
+                            "recall": 0.9484536082474226,
+                            "f1": 0.9387755102040817,
+                            "roc_auc": 0.9878938311836636,
+                            "confusion_matrix": {
+                                "tn": 670,
+                                "fp": 7,
+                                "fn": 5,
+                                "tp": 92,
+                                "matrix": [
+                                    [
+                                        670,
+                                        7
+                                    ],
+                                    [
+                                        5,
+                                        92
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.56121826171875
+                    }
+                ],
+                "train_time_sec": 0.7799081802368164,
+                "val_inf_time_sec": 0.009837150573730469,
+                "test_inf_time_sec": 0.011546134948730469,
+                "model_size_kb": 776.41796875,
+                "val_metrics": {
+                    "accuracy": 0.9857881136950905,
+                    "precision": 0.9479166666666666,
+                    "recall": 0.9381443298969072,
+                    "f1": 0.9430051813471503,
+                    "roc_auc": 0.9925687919718589,
+                    "confusion_matrix": {
+                        "tn": 672,
+                        "fp": 5,
+                        "fn": 6,
+                        "tp": 91,
+                        "matrix": [
+                            [
+                                672,
+                                5
+                            ],
+                            [
+                                6,
+                                91
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.9909560723514211,
+                    "precision": 0.989010989010989,
+                    "recall": 0.9375,
+                    "f1": 0.9625668449197861,
+                    "roc_auc": 0.9981563421828908,
+                    "confusion_matrix": {
+                        "tn": 677,
+                        "fp": 1,
+                        "fn": 6,
+                        "tp": 90,
+                        "matrix": [
+                            [
+                                677,
+                                1
+                            ],
+                            [
+                                6,
+                                90
+                            ]
+                        ]
+                    }
+                }
+            },
+            "comparison": {
+                "val_delta_f1": 0.004860851450243064,
+                "is_val_f1_tied": true,
+                "winner": "Logistic Regression",
+                "winner_reason": "Practically tied on validation F1 (|dF1| = 0.0049 < 0.01) with comparable secondary metrics. Logistic Regression preferred as the simpler, more interpretable linear baseline."
+            }
+        },
+        "email": {
+            "channel": "Email",
+            "logistic_regression": {
+                "best_config": {
+                    "C": 10.0,
+                    "class_weight": null,
+                    "solver": "lbfgs",
+                    "max_iter": 1000,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "C": 0.1,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.978018399413824,
+                            "precision": 0.9737045630317092,
+                            "recall": 0.9843627834245504,
+                            "f1": 0.97900466562986,
+                            "roc_auc": 0.9971070352602237,
+                            "confusion_matrix": {
+                                "tn": 5718,
+                                "fp": 170,
+                                "fn": 100,
+                                "tp": 6295,
+                                "matrix": [
+                                    [
+                                        5718,
+                                        170
+                                    ],
+                                    [
+                                        100,
+                                        6295
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 1.6057813167572021
+                    },
+                    {
+                        "config": {
+                            "C": 1.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9865667996417813,
+                            "precision": 0.9853536927391711,
+                            "recall": 0.9888975762314308,
+                            "f1": 0.9871224537579021,
+                            "roc_auc": 0.9990440795288438,
+                            "confusion_matrix": {
+                                "tn": 5794,
+                                "fp": 94,
+                                "fn": 71,
+                                "tp": 6324,
+                                "matrix": [
+                                    [
+                                        5794,
+                                        94
+                                    ],
+                                    [
+                                        71,
+                                        6324
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 2.87829852104187
+                    },
+                    {
+                        "config": {
+                            "C": 5.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9885207196938859,
+                            "precision": 0.9882885696439725,
+                            "recall": 0.9896794370602033,
+                            "f1": 0.9889835143370576,
+                            "roc_auc": 0.9992595427388925,
+                            "confusion_matrix": {
+                                "tn": 5813,
+                                "fp": 75,
+                                "fn": 66,
+                                "tp": 6329,
+                                "matrix": [
+                                    [
+                                        5813,
+                                        75
+                                    ],
+                                    [
+                                        66,
+                                        6329
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 3.407041549682617
+                    },
+                    {
+                        "config": {
+                            "C": 10.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9887649597003989,
+                            "precision": 0.9884465261514442,
+                            "recall": 0.9899921813917123,
+                            "f1": 0.98921875,
+                            "roc_auc": 0.9992766725022946,
+                            "confusion_matrix": {
+                                "tn": 5814,
+                                "fp": 74,
+                                "fn": 64,
+                                "tp": 6331,
+                                "matrix": [
+                                    [
+                                        5814,
+                                        74
+                                    ],
+                                    [
+                                        64,
+                                        6331
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 4.392542362213135
+                    }
+                ],
+                "train_time_sec": 4.499377250671387,
+                "val_inf_time_sec": 0.00997304916381836,
+                "test_inf_time_sec": 0.009366035461425781,
+                "model_size_kb": 78.9677734375,
+                "val_metrics": {
+                    "accuracy": 0.9887649597003989,
+                    "precision": 0.9884465261514442,
+                    "recall": 0.9899921813917123,
+                    "f1": 0.98921875,
+                    "roc_auc": 0.9992766725022946,
+                    "confusion_matrix": {
+                        "tn": 5814,
+                        "fp": 74,
+                        "fn": 64,
+                        "tp": 6331,
+                        "matrix": [
+                            [
+                                5814,
+                                74
+                            ],
+                            [
+                                64,
+                                6331
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.9880332139368284,
+                    "precision": 0.9875156054931336,
+                    "recall": 0.9895230648944487,
+                    "f1": 0.9885183160196829,
+                    "roc_auc": 0.9990523671503743,
+                    "confusion_matrix": {
+                        "tn": 5809,
+                        "fp": 80,
+                        "fn": 67,
+                        "tp": 6328,
+                        "matrix": [
+                            [
+                                5809,
+                                80
+                            ],
+                            [
+                                67,
+                                6328
+                            ]
+                        ]
+                    }
+                }
+            },
+            "lightgbm": {
+                "best_config": {
+                    "n_estimators": 150,
+                    "learning_rate": 0.1,
+                    "num_leaves": 63,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "n_estimators": 100,
+                            "learning_rate": 0.1,
+                            "num_leaves": 31,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9814377595050069,
+                            "precision": 0.9808202089505692,
+                            "recall": 0.983580922595778,
+                            "f1": 0.9821986258588382,
+                            "roc_auc": 0.9985628925238808,
+                            "confusion_matrix": {
+                                "tn": 5765,
+                                "fp": 123,
+                                "fn": 105,
+                                "tp": 6290,
+                                "matrix": [
+                                    [
+                                        5765,
+                                        123
+                                    ],
+                                    [
+                                        105,
+                                        6290
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 38.775105714797974
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.05,
+                            "num_leaves": 31,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9821704795245462,
+                            "precision": 0.9815970056144728,
+                            "recall": 0.9842064112587959,
+                            "f1": 0.9828999765753104,
+                            "roc_auc": 0.9985611131531088,
+                            "confusion_matrix": {
+                                "tn": 5770,
+                                "fp": 118,
+                                "fn": 101,
+                                "tp": 6294,
+                                "matrix": [
+                                    [
+                                        5770,
+                                        118
+                                    ],
+                                    [
+                                        101,
+                                        6294
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 73.49266052246094
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 150,
+                            "learning_rate": 0.1,
+                            "num_leaves": 63,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.9893348530489294,
+                            "precision": 0.9887640449438202,
+                            "recall": 0.9907740422204847,
+                            "f1": 0.9897680231195813,
+                            "roc_auc": 0.9994360988119115,
+                            "confusion_matrix": {
+                                "tn": 5816,
+                                "fp": 72,
+                                "fn": 59,
+                                "tp": 6336,
+                                "matrix": [
+                                    [
+                                        5816,
+                                        72
+                                    ],
+                                    [
+                                        59,
+                                        6336
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 75.15489292144775
+                    }
+                ],
+                "train_time_sec": 75.62059307098389,
+                "val_inf_time_sec": 0.14966440200805664,
+                "test_inf_time_sec": 0.16106629371643066,
+                "model_size_kb": 1399.33984375,
+                "val_metrics": {
+                    "accuracy": 0.9893348530489294,
+                    "precision": 0.9887640449438202,
+                    "recall": 0.9907740422204847,
+                    "f1": 0.9897680231195813,
+                    "roc_auc": 0.9994360988119115,
+                    "confusion_matrix": {
+                        "tn": 5816,
+                        "fp": 72,
+                        "fn": 59,
+                        "tp": 6336,
+                        "matrix": [
+                            [
+                                5816,
+                                72
+                            ],
+                            [
+                                59,
+                                6336
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.9879518072289156,
+                    "precision": 0.9858453880852388,
+                    "recall": 0.9910867865519938,
+                    "f1": 0.988459139114161,
+                    "roc_auc": 0.9993577296747715,
+                    "confusion_matrix": {
+                        "tn": 5798,
+                        "fp": 91,
+                        "fn": 57,
+                        "tp": 6338,
+                        "matrix": [
+                            [
+                                5798,
+                                91
+                            ],
+                            [
+                                57,
+                                6338
+                            ]
+                        ]
+                    }
+                }
+            },
+            "comparison": {
+                "val_delta_f1": 0.0005492731195813061,
+                "is_val_f1_tied": true,
+                "winner": "Logistic Regression",
+                "winner_reason": "Practically tied on validation F1 (|dF1| = 0.0005 < 0.01) with comparable secondary metrics. Logistic Regression preferred as the simpler, more interpretable linear baseline."
+            }
+        },
+        "url": {
+            "channel": "URL",
+            "logistic_regression": {
+                "best_config": {
+                    "C": 0.1,
+                    "class_weight": null,
+                    "solver": "lbfgs",
+                    "max_iter": 1000,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "C": 0.01,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.8566666666666667,
+                            "precision": 0.9277275886031967,
+                            "recall": 0.3948535936113576,
+                            "f1": 0.553941908713693,
+                            "roc_auc": 0.7913224188705184,
+                            "confusion_matrix": {
+                                "tn": 11515,
+                                "fp": 104,
+                                "fn": 2046,
+                                "tp": 1335,
+                                "matrix": [
+                                    [
+                                        11515,
+                                        104
+                                    ],
+                                    [
+                                        2046,
+                                        1335
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.08965826034545898
+                    },
+                    {
+                        "config": {
+                            "C": 0.1,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.857,
+                            "precision": 0.9244505494505495,
+                            "recall": 0.39810706891452236,
+                            "f1": 0.5565433119702294,
+                            "roc_auc": 0.791722583426737,
+                            "confusion_matrix": {
+                                "tn": 11509,
+                                "fp": 110,
+                                "fn": 2035,
+                                "tp": 1346,
+                                "matrix": [
+                                    [
+                                        11509,
+                                        110
+                                    ],
+                                    [
+                                        2035,
+                                        1346
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.06780219078063965
+                    },
+                    {
+                        "config": {
+                            "C": 1.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.857,
+                            "precision": 0.9244505494505495,
+                            "recall": 0.39810706891452236,
+                            "f1": 0.5565433119702294,
+                            "roc_auc": 0.7917231689092301,
+                            "confusion_matrix": {
+                                "tn": 11509,
+                                "fp": 110,
+                                "fn": 2035,
+                                "tp": 1346,
+                                "matrix": [
+                                    [
+                                        11509,
+                                        110
+                                    ],
+                                    [
+                                        2035,
+                                        1346
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.06561613082885742
+                    },
+                    {
+                        "config": {
+                            "C": 10.0,
+                            "class_weight": null,
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.857,
+                            "precision": 0.9244505494505495,
+                            "recall": 0.39810706891452236,
+                            "f1": 0.5565433119702294,
+                            "roc_auc": 0.7917200633064402,
+                            "confusion_matrix": {
+                                "tn": 11509,
+                                "fp": 110,
+                                "fn": 2035,
+                                "tp": 1346,
+                                "matrix": [
+                                    [
+                                        11509,
+                                        110
+                                    ],
+                                    [
+                                        2035,
+                                        1346
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.07111811637878418
+                    },
+                    {
+                        "config": {
+                            "C": 1.0,
+                            "class_weight": "balanced",
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.7942,
+                            "precision": 0.54375,
+                            "recall": 0.5403726708074534,
+                            "f1": 0.5420560747663551,
+                            "roc_auc": 0.7933871865221727,
+                            "confusion_matrix": {
+                                "tn": 10086,
+                                "fp": 1533,
+                                "fn": 1554,
+                                "tp": 1827,
+                                "matrix": [
+                                    [
+                                        10086,
+                                        1533
+                                    ],
+                                    [
+                                        1554,
+                                        1827
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.15866971015930176
+                    },
+                    {
+                        "config": {
+                            "C": 10.0,
+                            "class_weight": "balanced",
+                            "solver": "lbfgs",
+                            "max_iter": 1000,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.7936666666666666,
+                            "precision": 0.542458432304038,
+                            "recall": 0.5403726708074534,
+                            "f1": 0.5414135427470737,
+                            "roc_auc": 0.7935053521627558,
+                            "confusion_matrix": {
+                                "tn": 10078,
+                                "fp": 1541,
+                                "fn": 1554,
+                                "tp": 1827,
+                                "matrix": [
+                                    [
+                                        10078,
+                                        1541
+                                    ],
+                                    [
+                                        1554,
+                                        1827
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.14956974983215332
+                    }
+                ],
+                "train_time_sec": 0.07816624641418457,
+                "val_inf_time_sec": 0.004060029983520508,
+                "test_inf_time_sec": 0.003527402877807617,
+                "model_size_kb": 1.4208984375,
+                "val_metrics": {
+                    "accuracy": 0.857,
+                    "precision": 0.9244505494505495,
+                    "recall": 0.39810706891452236,
+                    "f1": 0.5565433119702294,
+                    "roc_auc": 0.791722583426737,
+                    "confusion_matrix": {
+                        "tn": 11509,
+                        "fp": 110,
+                        "fn": 2035,
+                        "tp": 1346,
+                        "matrix": [
+                            [
+                                11509,
+                                110
+                            ],
+                            [
+                                2035,
+                                1346
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.8599333333333333,
+                    "precision": 0.9278074866310161,
+                    "recall": 0.41052942916296953,
+                    "f1": 0.5692023785113799,
+                    "roc_auc": 0.802071584704336,
+                    "confusion_matrix": {
+                        "tn": 11511,
+                        "fp": 108,
+                        "fn": 1993,
+                        "tp": 1388,
+                        "matrix": [
+                            [
+                                11511,
+                                108
+                            ],
+                            [
+                                1993,
+                                1388
+                            ]
+                        ]
+                    }
+                }
+            },
+            "lightgbm": {
+                "best_config": {
+                    "n_estimators": 200,
+                    "learning_rate": 0.1,
+                    "num_leaves": 63,
+                    "class_weight": null,
+                    "random_state": 42
+                },
+                "tuning_results": [
+                    {
+                        "config": {
+                            "n_estimators": 100,
+                            "learning_rate": 0.1,
+                            "num_leaves": 31,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.8932,
+                            "precision": 0.8951577076854731,
+                            "recall": 0.5959775214433599,
+                            "f1": 0.7155539772727273,
+                            "roc_auc": 0.9126707931981902,
+                            "confusion_matrix": {
+                                "tn": 11383,
+                                "fp": 236,
+                                "fn": 1366,
+                                "tp": 2015,
+                                "matrix": [
+                                    [
+                                        11383,
+                                        236
+                                    ],
+                                    [
+                                        1366,
+                                        2015
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.40261387825012207
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.05,
+                            "num_leaves": 31,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.8926666666666667,
+                            "precision": 0.8906043228936921,
+                            "recall": 0.5971606033717834,
+                            "f1": 0.714943342776204,
+                            "roc_auc": 0.9126224908925017,
+                            "confusion_matrix": {
+                                "tn": 11371,
+                                "fp": 248,
+                                "fn": 1362,
+                                "tp": 2019,
+                                "matrix": [
+                                    [
+                                        11371,
+                                        248
+                                    ],
+                                    [
+                                        1362,
+                                        2019
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.5136210918426514
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.1,
+                            "num_leaves": 63,
+                            "class_weight": null,
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.8968,
+                            "precision": 0.8918341171440787,
+                            "recall": 0.6169772256728778,
+                            "f1": 0.7293706293706294,
+                            "roc_auc": 0.9208369375508336,
+                            "confusion_matrix": {
+                                "tn": 11366,
+                                "fp": 253,
+                                "fn": 1295,
+                                "tp": 2086,
+                                "matrix": [
+                                    [
+                                        11366,
+                                        253
+                                    ],
+                                    [
+                                        1295,
+                                        2086
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.6888935565948486
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 100,
+                            "learning_rate": 0.1,
+                            "num_leaves": 31,
+                            "class_weight": "balanced",
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.861,
+                            "precision": 0.6695447409733124,
+                            "recall": 0.7568766637089619,
+                            "f1": 0.7105372761349438,
+                            "roc_auc": 0.9135636285445523,
+                            "confusion_matrix": {
+                                "tn": 10356,
+                                "fp": 1263,
+                                "fn": 822,
+                                "tp": 2559,
+                                "matrix": [
+                                    [
+                                        10356,
+                                        1263
+                                    ],
+                                    [
+                                        822,
+                                        2559
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.2989685535430908
+                    },
+                    {
+                        "config": {
+                            "n_estimators": 200,
+                            "learning_rate": 0.05,
+                            "num_leaves": 63,
+                            "class_weight": "balanced",
+                            "random_state": 42
+                        },
+                        "val_metrics": {
+                            "accuracy": 0.8603333333333333,
+                            "precision": 0.6617203219315896,
+                            "recall": 0.7781721384205856,
+                            "f1": 0.7152371890716325,
+                            "roc_auc": 0.9190582162807459,
+                            "confusion_matrix": {
+                                "tn": 10274,
+                                "fp": 1345,
+                                "fn": 750,
+                                "tp": 2631,
+                                "matrix": [
+                                    [
+                                        10274,
+                                        1345
+                                    ],
+                                    [
+                                        750,
+                                        2631
+                                    ]
+                                ]
+                            }
+                        },
+                        "train_time": 0.830094575881958
+                    }
+                ],
+                "train_time_sec": 0.6980586051940918,
+                "val_inf_time_sec": 0.10223889350891113,
+                "test_inf_time_sec": 0.10264110565185547,
+                "model_size_kb": 1329.13671875,
+                "val_metrics": {
+                    "accuracy": 0.8968,
+                    "precision": 0.8918341171440787,
+                    "recall": 0.6169772256728778,
+                    "f1": 0.7293706293706294,
+                    "roc_auc": 0.9208369375508336,
+                    "confusion_matrix": {
+                        "tn": 11366,
+                        "fp": 253,
+                        "fn": 1295,
+                        "tp": 2086,
+                        "matrix": [
+                            [
+                                11366,
+                                253
+                            ],
+                            [
+                                1295,
+                                2086
+                            ]
+                        ]
+                    }
+                },
+                "test_metrics": {
+                    "accuracy": 0.8993333333333333,
+                    "precision": 0.8935633151030711,
+                    "recall": 0.6282165039929015,
+                    "f1": 0.7377561653351858,
+                    "roc_auc": 0.9238054992537772,
+                    "confusion_matrix": {
+                        "tn": 11366,
+                        "fp": 253,
+                        "fn": 1257,
+                        "tp": 2124,
+                        "matrix": [
+                            [
+                                11366,
+                                253
+                            ],
+                            [
+                                1257,
+                                2124
+                            ]
+                        ]
+                    }
+                }
+            },
+            "comparison": {
+                "val_delta_f1": 0.17282731740039992,
+                "is_val_f1_tied": false,
+                "winner": "LightGBM",
+                "winner_reason": "Decisive validation F1 advantage (|dF1| = 0.1728 >= 0.01)."
+            }
+        }
+    }
+}

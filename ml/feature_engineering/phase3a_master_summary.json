@@ -1,0 +1,155 @@
+{
+    "phase": "Phase 3A - Feature Engineering Only",
+    "channels": {
+        "sms": {
+            "channel": "SMS",
+            "tfidf_ngram_range": [
+                1,
+                2
+            ],
+            "tfidf_max_features": 4000,
+            "tfidf_vocab_size": 4000,
+            "num_structural_features": 6,
+            "structural_feature_names": [
+                "message_length",
+                "digit_to_length_ratio",
+                "url_presence",
+                "punctuation_density",
+                "uppercase_ratio",
+                "special_char_count"
+            ],
+            "total_features": 4006,
+            "representation": "scipy.sparse.csr_matrix",
+            "train_shape": [
+                3610,
+                4006
+            ],
+            "val_shape": [
+                774,
+                4006
+            ],
+            "test_shape": [
+                774,
+                4006
+            ],
+            "nan_count": 0,
+            "inf_count": 0
+        },
+        "email": {
+            "channel": "Email",
+            "subject_tfidf_ngram_range": [
+                1,
+                2
+            ],
+            "subject_tfidf_max_features": 3000,
+            "subject_vocab_size": 3000,
+            "body_tfidf_ngram_range": [
+                1,
+                2
+            ],
+            "body_tfidf_max_features": 7000,
+            "body_vocab_size": 7000,
+            "implemented_structural_features": [
+                "email_length",
+                "url_count",
+                "digit_count",
+                "exclamation_count",
+                "all_caps_word_count",
+                "urgency_keyword_count"
+            ],
+            "skipped_structural_features": [
+                {
+                    "name": "sender_domain_mismatch",
+                    "reason": "Enron & Ling datasets lack sender/from fields (~40% of records), and authentication headers are absent."
+                },
+                {
+                    "name": "attachment_presence",
+                    "reason": "No authentic attachment metadata field exists across the 6 normalized source datasets."
+                },
+                {
+                    "name": "html_to_text_ratio",
+                    "reason": "Raw HTML was stripped/standardized in multiple sources, making comparison unreliable."
+                }
+            ],
+            "total_features": 10006,
+            "representation": "scipy.sparse.csr_matrix",
+            "train_shape": [
+                57320,
+                10006
+            ],
+            "val_shape": [
+                12283,
+                10006
+            ],
+            "test_shape": [
+                12284,
+                10006
+            ],
+            "nan_count": 0,
+            "inf_count": 0
+        },
+        "url": {
+            "channel": "URL",
+            "feature_count": 15,
+            "feature_names": [
+                "url_length",
+                "hostname_length",
+                "path_length",
+                "query_length",
+                "dot_count",
+                "hyphen_count",
+                "digit_count",
+                "special_char_count",
+                "subdomain_depth",
+                "https_presence",
+                "ip_hostname",
+                "suspicious_token_presence",
+                "at_symbol_presence",
+                "embedded_double_slash_count",
+                "digit_to_length_ratio"
+            ],
+            "suspicious_tokens": [
+                "login",
+                "signin",
+                "verify",
+                "update",
+                "account",
+                "banking",
+                "secure",
+                "ebayisapi",
+                "webscr",
+                "password",
+                "authenticate",
+                "confirm",
+                "wallet",
+                "admin",
+                "service"
+            ],
+            "representation": "dense_numpy_pandas",
+            "train_shape": [
+                70000,
+                15
+            ],
+            "val_shape": [
+                15000,
+                15
+            ],
+            "test_shape": [
+                15000,
+                15
+            ],
+            "nan_count": 0,
+            "inf_count": 0,
+            "parsing_failures": 0
+        }
+    },
+    "feature_registry_count": 30,
+    "leakage_verification": {
+        "tfidf_fit_only_on_train": true,
+        "scalers_fit_only_on_train": true,
+        "val_and_test_transformed_only": true,
+        "target_column_excluded_from_features": true,
+        "source_column_excluded_from_features": true,
+        "cross_channel_features_shared": false
+    }
+}
